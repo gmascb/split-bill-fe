@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {performJoinCart} from "../utils";
+import {Logout} from "./Logout";
 
 export const JoinCart = () => {
     const [id, setId] = useState('');
@@ -23,6 +24,7 @@ export const JoinCart = () => {
 
     return (
         <div>
+            <Logout/>
             <div className={"auth-form-container"}>
                 <h2>Ingressar em carrinho / evento</h2>
                 <form className={"register-form"} onSubmit={handleSubmit}>

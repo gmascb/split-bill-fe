@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {addProduct} from "../utils";
 import {useNavigate, useParams} from "react-router-dom";
+import {Logout} from "./Logout";
 
 export const CreateProduct = () => {
     const { id } = useParams();
@@ -25,6 +26,7 @@ export const CreateProduct = () => {
 
     return (
         <div>
+            <Logout/>
             <div className={"auth-form-container"}>
                 <h2>Adicionar Produto</h2>
                 <form className={"register-form"} onSubmit={handleSubmit}>

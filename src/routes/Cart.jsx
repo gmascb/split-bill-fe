@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link, useParams} from 'react-router-dom';
 import {getCart} from "../utils";
 import ProductsData from "../components/ProductsData";
+import {Logout} from "../components";
 
 const Cart = () => {
     const { id } = useParams();
@@ -17,6 +18,7 @@ const Cart = () => {
     return (
         <>
             <div>
+                <Logout/>
                 <h2>{cart?.name}</h2>
                 <table>
                     <thead>
