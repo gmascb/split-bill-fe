@@ -16,7 +16,7 @@ export const GoogleButton = () => {
         if (typeof google !== 'undefined' && google.accounts && google.accounts.id) {
             // eslint-disable-next-line
             google.accounts.id.initialize({
-                client_id: process.env.GOOGLE_CLIENT_ID || '119082365930-s1h8lgre9nje5jgnddt19ffmhdhifjab.apps.googleusercontent.com',
+                client_id: process.env.GOOGLE_CLIENT_ID || '',
                 callback: handleCallbackResponse,
             });
             // eslint-disable-next-line
